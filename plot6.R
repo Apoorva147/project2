@@ -18,6 +18,6 @@ yearwise$emissions = as.numeric(as.character(yearwise$emissions))
 #using ggplot which is handy to represent complex represention
 ggplot(data=yearwise, aes(x=year, y=emissions, col=fips)) + geom_line() + geom_point() + ggtitle("Emissions from Motor Vehicles in Baltimore City compared to Los Angeles")
 
-#Saving and writing  plot5 png
+#Saving and writing  plot6 png
 dev.copy(png, file="plot6.png", width=480, height=480)
 dev.off()
